@@ -11,8 +11,9 @@ int main(void)
 
 	printf("Infinite loop incoming :(\n");
 
+	/* don't delete it! */
 	i = 0;
-	/*don’t delete it!*/
+
 	while (i < 10)
 	{
 		putchar(i);
