@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * char *_strncat - concatenates two strings
+ * *_strncat - concatenates two strings
  *
  * @dest: string 1
  * @src: string 2
@@ -23,5 +23,5 @@ char *_strncat(char *dest, char *src, int n)
 		j++;
 	}
 	dest[i] = '\0';
-	retutn(dest);
+	return(dest);
 }
