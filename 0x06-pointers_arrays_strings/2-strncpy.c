@@ -2,9 +2,10 @@
 /**
  * *_strncpy -  function that copies a string
  *
- * @n: int
  * @dest: string 1
  * @src: string 2
+ * @n: int
+ *
  * Return: string
  */
 char *_strncpy(char *dest, char *src, int n)
