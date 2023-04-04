@@ -1,19 +1,26 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * print_chessboard - function that prints the chessboard.
- *@a: first value -char
- *
+ * _strstr - Entry point
+ * @haystack: input
+ * @needle: input
+ * Return: Always 0 (Success)
  */
-void print_chessboard(char (*a)[8])
+char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
-
-	for (i = 0; i < 8; i++)
+	for (; *haystack != '\0'; haystack++)
 	{
-		for (j = 0; j < 8; j++)
+		char *l = haystack;
+		char *p = needle;
+
+		while (*l == *p && *p != '\0')
 		{
-			_putchar (a[i][j]);
+			l++;
+			p++;
 		}
-		_putchar('\n');
+
+		if (*p == '\0')
+			return (haystack);
 	}
+
+	return (0);
 }
