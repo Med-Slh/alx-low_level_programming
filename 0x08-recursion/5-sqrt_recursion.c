@@ -7,9 +7,9 @@ int calc_sqrt_rec(int n, int i);
  */
 int _sqrt_recursion(int n)
 {
-        if (n < 0)
-                return (-1);
-        return (calc_sqrt_rec(n, 0));
+	if (n < 0)
+		return (-1);
+	return (calc_sqrt_rec(n, 0));
 }
 /**
  * calc_sqrt_rec - function that help to find the root square
@@ -19,9 +19,9 @@ int _sqrt_recursion(int n)
  */
 int calc_sqrt_rec(int n, int i)
 {
-        if (i * i > n)
-                return (-1);
-        if (i * i == n)
-                return (i);
-        return (calc_sqrt_rec(n, i + 1));
+	if (i * i > n)
+		return (-1);
+	if (i * i == n)
+		return (i);
+	return (calc_sqrt_rec(n, i + 1));
 }
