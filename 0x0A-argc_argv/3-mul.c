@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	int i;
 	int mult;
 
-	if (argc > 2)
+	if (argc == 2 )
 	{
 		for (i = 1; i < argc; i++)
 		{
@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		printf("%d\n", mult);
 		return (0);
 	}
-	else if (argc < 2)
+	else if (argc < 3 || argc >3)
 	{
 		printf("Error\n");
 		return (1);
