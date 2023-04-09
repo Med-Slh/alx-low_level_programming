@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			mult = atoi(argv[1]) * atoi(argv[2]);
+			mult = atoi(argv[i]) * atoi(argv[i + 1]);
 		}
 		printf("%d\n", mult);
 		return (0);
