@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * main - a function that multiplies two numbers
+ * @argc: argument count
+ * @argv: argument vector
+ *
+ * Return: always 0
+ */
+int main(int argc, char *argv[])
+{
+	int i;
+	int mult;
+
+	if (argc > 2)
+	{
+		for (i = 1; i < argc; i++)
+		{
+		mult = atoi(argv[1]) * atoi(argv[2]);
+		}
+		printf("%d\n", mult);
+		return (0);
+	}
+	else if (argc < 2)
+	{
+		printf("Error\n");
+	}
+		return (1);
+}
