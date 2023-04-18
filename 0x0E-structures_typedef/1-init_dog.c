@@ -1,5 +1,4 @@
 #include "dog.h"
-
 /**
  * init_dog - initializes a dog
  * @d: the dog to initialize
