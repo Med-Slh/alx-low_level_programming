@@ -1,4 +1,4 @@
-#include "3-clac."
+#include "3-calc.h"
 #include <stdlib.h>
 /**
  * get_op_func - select the correct func
