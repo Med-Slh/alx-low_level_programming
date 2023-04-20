@@ -4,6 +4,7 @@
  *  on each element of an array.
  *  @array: the int array
  *  @size: array size
+ *  @action: function pointer
  *  Return: void
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
