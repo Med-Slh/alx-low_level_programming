@@ -4,15 +4,16 @@
 #include <string.h>
 
 /**
- *
- *
+ * _strlen - function that return the length of a string
+ * @s: pointer to a string
+ * Return: an integer
  */
 int _strlen(char *s)
 {
 	int i = 0;
 
 	if (!s)
-		return(0);
+		return (0);
 
 	while (s[i] != '\0')
 		i++;
@@ -30,7 +31,7 @@ size_t print_listint(const listint_t *h)
 
 	while (h)
 	{
-		printf("%d\n",h->n);
+		printf("%d\n", h->n);
 		h = h->next;
 		i++;
 	}
